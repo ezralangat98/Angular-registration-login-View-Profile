@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<div class="container text-left">
+		
+	</div>
+	<meta charset="ISO-8859-1">
+	<!-- <title>Office Meetings Planner</title> -->
+	<link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css" />
+	<script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+</head>
+
+<nav id="navbar-home" class="navbar navbar-expand-sm navbar-dark bg-primary fixed-top" style="background-color:limegreen;">
+	<a class="navbar-brand" href="">Office Meeting Planner</a>
+<br>
+<a href="#!/home" >Home</a><br><br>
+        </ul>
+
+	</div>
+</nav>
+
+<body style="background:#F2F0E6;">
+
+    <div class="top">
+        <div class="d-flex" id="wrapper" style="background-color: #baf3d7">
+    
+    
+            <div class="container text-center" style="  margin: 3% 1% 1%;">
+
+
+                <p>Currrent user: <b>{{vm.user.firstName}}</b></p>
+                <p>Your Profile</p><br/>
+                
+                Firstname:<b><span>{{vm.user.firstName}}</span></b><br/><br/>
+                Lastname: <b><span>{{vm.user.lastName}}</span></b><br/><br/>
+                Username: <b><span>{{vm.user.username}}</span></b><br/><br/>
+                Password: <b><span>{{vm.user.password}}</span></b><br/><br/>
+                <br><br><br>
+                
+                <p><a href="#!/login" class="btn btn-primary" ng-click="vm.alertLogout()">Logout</a></p>
+                
+
+</div>
+
+</div>
+
+</div>
+
+<footer class="container text-center" style=" background-color: black; color: white">
+    <p>Tracom Service, copyright &copy  All Rights Reserved 2021</p>
+</footer>
+
+
+</body>
+</html>

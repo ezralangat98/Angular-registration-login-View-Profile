@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<div class="container text-left">
+		
+	</div>
+	<meta charset="ISO-8859-1">
+	<!-- <title>Office Meetings Planner</title> -->
+	<link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css" />
+	<script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+</head>
+
+<nav id="navbar-home" class="navbar navbar-expand-sm navbar-dark bg-primary fixed-top" style="background-color:limegreen;">
+	<a class="navbar-brand" href="">Office Meeting Planner</a>
+<br>
+    <a href="#!/profile" >View Profile</a>
+	
+        </ul>
+
+	</div>
+</nav>
+
+<body style="background:#F2F0E6;">
+
+    <div class="top">
+        <div class="d-flex" id="wrapper" style="background-color: #baf3d7">
+    
+    
+            <div class="container text-center" style="  margin: 3% 1% 1%;">
+
+
+<P><b>Hi {{vm.user.firstName}}!</b></P>
+<p>You're logged in!!</p>
+
+<h3>All registered users:</h3>
+<ul>
+    <li ng-repeat="user in vm.allUsers">
+        {{user.username}} ({{user.firstName}} {{user.lastName}})
+        - <a ng-click="vm.deleteUser(user.id)">Delete</a>
+    </li>
+</ul>
+
+<p>&nbsp;</p>
+<p><a href="#!/login" class="btn btn-primary" ng-click="vm.alertLogout()">Logout</a></p>
+
+
+
+</div>
+
+</div>
+
+</div>
+
+<footer class="container text-center" style=" background-color: black; color: white">
+    <p>Tracom Service, copyright &copy  All Rights Reserved 2021</p>
+</footer>
+
+
+</body>
+</html>
